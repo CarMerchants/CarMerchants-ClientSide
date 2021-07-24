@@ -1,0 +1,51 @@
+{
+  "name": "TheCarVendors.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --watch",
+    "dev-server": "webpack serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.14.5",
+    "animate.css": "^4.1.1",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css": "^3.0.0",
+    "css-loader": "^6.1.0",
+    "emailjs-com": "^3.2.0",
+    "firebase": "^8.7.1",
+    "loader": "^2.1.1",
+    "moment": "^2.29.1",
+    "node-sass": "^6.0.1",
+    "normalize.css": "^8.0.1",
+    "react": "^17.0.2",
+    "react-dates": "^21.8.0",
+    "react-dom": "^17.0.2",
+    "react-modal": "^3.14.3",
+    "react-model": "^4.0.2",
+    "react-notifications-component": "^3.1.0",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.1.0",
+    "redux-thunk": "^2.3.0",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.0.0",
+    "sweetalert": "^2.1.2",
+    "url-loader": "^4.1.1",
+    "validator": "^13.6.0",
+    "webpack": "^5.44.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.7.2"
+  }
+}

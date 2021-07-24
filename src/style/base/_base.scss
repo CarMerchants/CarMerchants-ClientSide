@@ -1,0 +1,46 @@
+//rem 
+
+html{
+    font-size: 62.5%;
+    height: 100%;
+    width : 100%;
+    margin: 0;
+
+}
+
+body {
+    font-family: "Capsule Sans Text", sans-serif;
+    font-size: $m-size;
+    background: #f6f9fc;
+    margin: 0;
+    min-height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.isActive ::after{
+    content: "";
+    display: block;
+    background-color: black;
+    height: 2px;
+    width: 100%;
+}
+
+::-webkit-scrollbar{
+    width: .5rem;
+    height: .5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(245, 131, 32, 0.767); 
+}
+
+
+
+
+
+

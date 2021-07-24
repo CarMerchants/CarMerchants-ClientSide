@@ -1,0 +1,195 @@
+.HomePage {
+    display: flex;
+    flex-direction: column;
+    margin-left: .5%;
+}
+
+.HomePage h1::after{
+    content: "";
+    display: block;
+    width: 2%;
+    height: .4rem;
+    background-color: $light-orange;
+    border-radius: 2rem;
+}
+
+.RowSec {
+    display: flex;
+    flex-direction: row;
+    color: $greyish-black;
+    justify-content: space-between;
+}
+
+.CarLogo{
+    border-radius: 1rem;
+    width: 35%;
+    display: flex;
+    margin-left: .2%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}   
+
+.logo{
+    border-radius: 1rem;
+    padding:1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(50,50,93,10%);
+}
+
+.logo img {
+    width: 10rem;
+    height: 5rem;
+}
+
+.SideImg img {
+    width: 35rem;
+}
+
+.SideImg__WithText{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+
+
+.WithText__text{
+    display: flex;
+    flex-direction: column;
+    padding: .5rem 1rem;
+    justify-content: center;
+}
+.text__title{
+    font-weight: bold;
+    font-size: $m-size;
+    margin-bottom: .5%;
+}
+
+.text__content{
+    font-size: $m-size;
+    font-family: 'Yomogi', cursive;
+    font-weight: bold;
+}
+
+.changeImgWithText{
+    width: 90%;
+    justify-content: center;
+}
+
+
+
+.plain_text {
+    width: 90%;
+    margin-top: -.5%;
+    margin-bottom: 1%;
+    padding: -2rem 0rem;
+    font-family: 'Yomogi', cursive;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+@media (max-width:$desktop-breakpoint) and (min-width : $desktop-breakpoint-1){
+    .HomePage{
+        text-align: center;
+        margin-top: 6.5%;
+    } 
+    .RowSec {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } 
+    .CarLogo {
+        width: 90%;
+        margin-bottom: 2%;
+    }
+
+    .logo{
+        margin: .5rem .3rem;
+    }
+
+    .HomePage h1::after {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .SideImg{
+        margin-top: 0rem;
+    }
+
+    .SideImg__WithText{
+        width: 96%;
+        padding: 0rem;
+    }
+    .WithText__text{
+        width: 55%;
+        padding: 0 .5rem;
+        text-align: start;
+    }
+    .Footer {
+        flex-direction: column;
+    }
+
+    .plain_text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}
+
+@media (max-width : $desktop-breakpoint-1){
+    .HomePage{
+        text-align: center;
+        margin-top: 16%;
+    }
+    .RowSec {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .CarLogo {
+        width: 90%;
+    }
+    .logo{
+        margin: .5rem .3rem;
+    }
+    .logo img {
+        width: 7.2rem;
+        height: 4rem;
+    }
+    .SideImg{
+        margin-top: 1rem;
+    }
+    .SideImg__WithText{
+        width: 96%;
+        padding: .7rem;
+    }
+    .WithText__text{
+        width: 55%;
+        padding: 0 .5rem;
+        text-align: start;
+    }
+    .Footer {
+        flex-direction: column;
+    }
+    .plain_text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .HomePage h1 {
+        font-size: 2rem;
+    }
+    .HomePage h1::after {
+        margin-left: auto;
+        margin-right: auto;
+        width: 10%;
+    }
+}

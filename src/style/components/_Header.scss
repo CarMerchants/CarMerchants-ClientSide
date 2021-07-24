@@ -1,0 +1,128 @@
+.Header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color:white;
+    margin-bottom: 1%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.664);
+}
+
+.HomePage {
+    margin-top: 5%;
+}
+
+.Header span {
+    color: $blue;
+}
+
+.Header h1{
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin-left: .2%;
+}
+
+
+.NavBar {
+    display: flex;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    padding: .5%;
+}
+
+.Close{
+    display: none;
+    cursor: pointer;
+}
+
+.Close img {
+    width: 2rem;
+    height: 2rem;
+    padding: 15%;
+    border: 1px solid black;
+    border-radius: 100rem;
+
+}
+
+.Option__text{
+    text-decoration: none;
+    font-family: "Capsule Sans Text", sans-serif;
+    font-size: 2rem;
+    padding: 2%;
+    color: black;
+}
+
+
+.Option{
+    display: flex;
+    width: 15%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition:  0.8s ease;
+}
+
+.Option__text:hover{
+    color:  $profit-green;
+}
+
+
+.HamBurgers{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 1rem;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+
+@media (max-width : $desktop-breakpoint){
+    .Burgers{
+        width: 3rem;
+        height: .5rem;
+        background-color: black;
+        margin: .2rem;
+    }
+    .Close{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Close img {
+        justify-content: flex-start;
+    }
+    .Header{
+        justify-content: space-between;
+        margin-top: 0%;
+        margin-bottom: -1%;
+        align-items: center;
+    }
+    .NavBar{
+        position: fixed;
+        flex-direction: column;
+        background: white;
+        align-items: center;
+        width: 60%;
+        height: 100%;
+        justify-content: center;
+        right: 0%;
+        top: 0;
+        display: none;
+    
+    }
+    .Option__text{
+        font-size: 1.5rem;
+    }
+    .Option{
+        width: 40%;
+        margin-top: 6%;
+    }
+}

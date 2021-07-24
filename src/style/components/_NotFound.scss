@@ -1,0 +1,38 @@
+.Not-Found {
+    display: flex;
+    padding: 15%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Not-Found .GoHome-btn{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    padding: 2%;
+    background: $orange;
+    font-weight: bold;
+    font-size: 2rem;
+    border: none;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+@media (max-width : $desktop-breakpoint){
+    .Not-Found{
+        padding: 0%;
+        padding-bottom: 3%;
+    }
+
+    .Not-Found h1 {
+        font-size: 2rem;
+    }
+
+    .Not-Found .GoHome-btn{
+        font-size: 1rem;
+    }
+}
