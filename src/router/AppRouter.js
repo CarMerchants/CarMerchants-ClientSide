@@ -15,12 +15,12 @@ export const AppRouter = () => (
         <BrowserRouter>
             <Header />
             <Switch>
-                <Route path = "/Carr-Merchants/public" component={HomePage} exact = {true}/>
-                <Route path = "/Carr-Merchants/public/products" component={ProductPage} />
-                <Route path = "/Carr-Merchants/public/contact_us"  component={ContactUsPage} />
-                <Route path = "/Carr-Merchants/public/team" component={TeamPage} />
-                <Route path = "/Carr-Merchants/public/blog" component = {BlogPage}/>
-                <Route path = "/Carr-Merchants/public/sitemap" component = {SiteMapPage}/>
+                <Route path = "/" component={HomePage} exact = {true}/>
+                <Route path = "/products" component={ProductPage} />
+                <Route path = "/contact_us"  component={ContactUsPage} />
+                <Route path = "/team" component={TeamPage} />
+                <Route path = "/blog" component = {BlogPage}/>
+                <Route path = "/sitemap" component = {SiteMapPage}/>
                 <Route component = {NotFound}/>
             </Switch>
             <Footer/>

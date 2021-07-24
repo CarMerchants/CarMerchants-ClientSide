@@ -26,11 +26,11 @@ const Footer = () => (
         <div className = "TopBrands">
             <h3>Useful Links</h3>
             <span>
-                <a href = "/Carr-Merchants/public/team">The Team</a> |&nbsp;
-                <a href = "/Carr-Merchants/public/join_us">Join Us</a> |&nbsp;
-                <a href = "/Carr-Merchants/public/contact_us">Contact Us</a> |&nbsp;
-                <a href = "/Carr-Merchants/public/blog">Blog</a> |&nbsp;
-                <a href = "/Carr-Merchants/public/sitemap">Sitemap</a>
+                <a href = "/team">The Team</a> |&nbsp;
+                <a href = "/join_us">Join Us</a> |&nbsp;
+                <a href = "/contact_us">Contact Us</a> |&nbsp;
+                <a href = "/blog">Blog</a> |&nbsp;
+                <a href = "/sitemap">Sitemap</a>
             </span>
 
         </div>
