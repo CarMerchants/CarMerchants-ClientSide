@@ -6,12 +6,6 @@ import {links} from './sections/ImportantLinks';
 
 const ContactUsPage = () => (
     <div className = "MainContactUs">
-        {/* <div className = "PhoneNumbers">
-            <div>
-                <h3 className = "PhoneNumbers__header">Address</h3>
-                <h4>Vani Apt , A-Wing , 2nd Floor 204, <br /> Chembur, Mumbai - 400074 </h4>
-            </div>
-        </div> */}
         <div className = "ContactUs">
             <div className = "ContactUs__heading">
                 <h3>What Can We Help You With?</h3>
@@ -31,7 +25,7 @@ const ContactUsPage = () => (
                    style = {{color : "#465166", textDecoration : "none"}}
                 ><h4>carrmerchants@gmail.com</h4><br /></a>
                 <h3 className = "PhoneNumbers__header">Address</h3>
-                <h4>Vani Apt , A-Wing , 2nd Floor 204, <br /> Chembur, Mumbai - 400074</h4>
+                <h4>Vani Apt , A-Wing , 2nd Floor 204,<br />Chembur, Mumbai - 400074</h4>
             </div>
         </div>
     </div>

@@ -14,12 +14,6 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
 
-
 export {firebase, database as default};
 
-// database.ref("cars").push({
-//     description : 'This is a affordable car',
-//     color : 'black',
-//     price : 150000,
-// });
 

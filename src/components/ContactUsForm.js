@@ -16,7 +16,6 @@ export default class ContactUsForm extends React.Component {
             message : "",
             name : "",
         }
-
         this.onNameChange = this.onNameChange.bind(this);
         this.onEmailChange = this.onEmailChange.bind(this);
         this.onMessageChange = this.onMessageChange.bind(this);
