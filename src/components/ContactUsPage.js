@@ -1,6 +1,7 @@
 import React from 'react';
 import ContactUsForm from './ContactUsForm';
 import ErrorButton from './ErrorButton';
+import {links} from './sections/ImportantLinks';
 
 
 const ContactUsPage = () => (
@@ -25,7 +26,7 @@ const ContactUsPage = () => (
                 <h4>+91-8879689643</h4>
                 <h4>+91-9664550617</h4><br />
                 <h3 className = "PhoneNumbers__header">Email Us At </h3>
-                <a href = "https://mail.google.com/mail/u/0/#inbox?compose=VpCqJTCxPKQzwgphMsTPgmbRZBWlnDzlGkHGtHtvXMHTlbBvgPpcWXDpSccJHQJcVClGjSl"
+                <a href = {links.gmail}
                    target = "_blank"
                    style = {{color : "#465166", textDecoration : "none"}}
                 ><h4>carrmerchants@gmail.com</h4><br /></a>

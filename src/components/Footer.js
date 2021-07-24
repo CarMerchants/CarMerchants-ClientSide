@@ -6,16 +6,17 @@ import insta from "../../public/img/CarRelated/insta.svg";
 import lin from "../../public/img/CarRelated/lin.svg";
 import SubscribeForm from './SubscribeForm';
 import {Link} from 'react-router-dom';
+import {links} from './sections/ImportantLinks';
 
 const Footer = () => (
     <div className="Footer">
         <div className = "Social-Media">
             <h3>Keep In Touch</h3>
             <div className = "Social-Media__logo">
-                <ImgWithText img = {fb} />
-                <ImgWithText link = {"https://www.instagram.com/TheCarMerchants/"} img = {insta}/>
-                <ImgWithText img = {yt} />
-                <ImgWithText link = {"https://www.linkedin.com/in/car-merchants"} img = {lin} />
+                <ImgWithText img = {fb} link = {links.facebook}/>
+                <ImgWithText link = {links.instagram} img = {insta}/>
+                <ImgWithText img = {yt} link = {links.youtube}/>
+                <ImgWithText link = {links.linkedIn} img = {lin} />
             </div>
         </div>
         <div className = "TopBrands">
