@@ -52,7 +52,7 @@ export default class SubscribeForm extends React.Component {
             }));
             swal({
                 title : "Subscribed",
-                text : "You are successfully Subscribed for the newsletter !!",
+                text : "You are successfully Subscribed for the newsletter",
                 icon : "success"
             });
         })

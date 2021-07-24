@@ -2,6 +2,8 @@ import React from 'react';
 import { init } from 'emailjs-com';
 import emailjs from 'emailjs-com';
 import swal from 'sweetalert';
+import validator from 'validator';
+
 
 init("user_yAoTfQpSbL0o6lmO5iyXj");
 
@@ -56,6 +58,20 @@ export default class ContactUsForm extends React.Component {
         const email = document.getElementById("email").value;
         const message = document.getElementById("message").value;
         const subject = document.getElementById("subject").value;
+        
+        if(!validator.isEmail(email)){
+            swal({
+                title : "Error",
+                text : "You have mentioned an incorrect email address",
+                icon : "error",
+            });
+
+            this.setState(() => ({
+                email : "",
+            }));
+
+            return ;
+        }
 
         emailjs.send("service_ja6wkpc","template_t3t1zmz",{
             name,
@@ -101,6 +117,7 @@ export default class ContactUsForm extends React.Component {
                         onChange = {this.onNameChange}
                         required = {true}
                         id = "name"
+                        autoFocus = {true}
                     />
                     <input 
                         placeholder = "name@email.com" 
