@@ -1,6 +1,6 @@
 import React from 'react';
 import TeamMate from './sections/TeamMate';
-import ford from '../../public/img/logos/ford.png' 
+import ford from '../../public/img/CarRelated/ford.png' 
 
 const TeamPage = () => (
     <div className = "Team">

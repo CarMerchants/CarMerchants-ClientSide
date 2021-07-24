@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import close from '../../public/img/logos/letter-x.png';
+import close from '../../public/img/CarRelated/letter-x.png';
 
 
 

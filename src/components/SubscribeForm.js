@@ -3,7 +3,7 @@ import database from '../firebase/firebase';
 import emailjs from 'emailjs-com';
 import { store } from 'react-notifications-component';
 import "animate.css";
-import snacks from '../../public/img/logos/Snacks-removebg.png';
+import snacks from '../../public/img/CarRelated/Snacks-removebg.png';
 import { init } from 'emailjs-com';
 import 'react-notifications-component/dist/theme.css';
 import { relativeTimeThreshold } from 'moment';

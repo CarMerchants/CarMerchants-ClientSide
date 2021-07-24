@@ -1,16 +1,15 @@
 import React from 'react';
 import CarLogos from './sections/CarLogoSec';
 import SideImg from './sections/SideImgSec';
-import service from '../../public/img/logos/service.svg';
-import sold from '../../public/img/logos/sold.svg';
-import SellHour from '../../public/img/logos/SellHour.svg';
-import BestPrice from '../../public/img/logos/BestPrice.svg';
-import InstPay from '../../public/img/logos/InstPay.svg';
-import FreeRc from '../../public/img/logos/FreeRc.svg';
-import doorstep from '../../public/img/logos/online_payment_doorstep_delivery.png';
-import choose from '../../public/img/logos/choose_from_the_best_pre_owned_cars.png';
-import website from '../../public/img/Untitled_design-car.png';
-import test_drive from '../../public/img/logos/test_drive.png';
+import service from '../../public/img/CarRelated/service.svg';
+import sold from '../../public/img/CarRelated/sold.svg';
+import SellHour from '../../public/img/CarRelated/SellHour.svg';
+import BestPrice from '../../public/img/CarRelated/BestPrice.svg';
+import InstPay from '../../public/img/CarRelated/InstPay.svg';
+import FreeRc from '../../public/img/CarRelated/FreeRc.svg';
+import doorstep from '../../public/img/CarRelated/online_payment_doorstep_delivery.png';
+import choose from '../../public/img/CarRelated/choose_from_the_best_pre_owned_cars.png';
+import test_drive from '../../public/img/CarRelated/test_drive.png';
 import ImgWithText from './sections/ImgWithText';
 
 

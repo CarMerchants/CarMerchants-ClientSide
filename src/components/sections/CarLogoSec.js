@@ -1,14 +1,14 @@
 import React from 'react';
-import mercedes from '../../../public/img/logos/mercedes.svg';
-import honda from '../../../public/img/logos/honda.png';
-import mahindra from '../../../public/img/logos/mahindra.png';
-import ford from '../../../public/img/logos/ford.png';
-import maruti from '../../../public/img/logos/maruti-suzuki.png';
-import fiat from '../../../public/img/logos/fiat.png';
-import renault from '../../../public/img/logos/renault.png';
-import tata from '../../../public/img/logos/tata.png'
-import hyundai from '../../../public/img/logos/hyundai.png';
-import volkswagen from '../../../public/img/logos/volkswagen.png';
+import mercedes from '../../../public/img/CarRelated/mercedes.svg';
+import honda from '../../../public/img/CarRelated/honda.png';
+import mahindra from '../../../public/img/CarRelated/mahindra.png';
+import ford from '../../../public/img/CarRelated/ford.png';
+import maruti from '../../../public/img/CarRelated/maruti-suzuki.png';
+import fiat from '../../../public/img/CarRelated/fiat.png';
+import renault from '../../../public/img/CarRelated/renault.png';
+import tata from '../../../public/img/CarRelated/tata.png'
+import hyundai from '../../../public/img/CarRelated/hyundai.png';
+import volkswagen from '../../../public/img/CarRelated/volkswagen.png';
 
 
 const CarLogos = () => (

@@ -1,9 +1,9 @@
 import React from 'react';
 import ImgWithText from './sections/ImgWithText';
-import fb from "../../public/img/logos/fb.svg";
-import yt from "../../public/img/logos/yt.svg";
-import insta from "../../public/img/logos/insta.svg";
-import lin from "../../public/img/logos/lin.svg";
+import fb from "../../public/img/CarRelated/fb.svg";
+import yt from "../../public/img/CarRelated/yt.svg";
+import insta from "../../public/img/CarRelated/insta.svg";
+import lin from "../../public/img/CarRelated/lin.svg";
 import SubscribeForm from './SubscribeForm';
 import ReactNotification from 'react-notifications-component';
 import "animate.css";
