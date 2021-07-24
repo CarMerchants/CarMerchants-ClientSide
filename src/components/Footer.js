@@ -50,7 +50,6 @@ const Footer = () => (
             </span>
         </div>
         <div className = "newsLetter">
-            <ReactNotification />
             <SubscribeForm />
         </div>
     </div>
