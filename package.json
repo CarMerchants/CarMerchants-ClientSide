@@ -6,7 +6,9 @@
   "main": "index.js",
   "scripts": {
     "buildit": "webpack --watch",
-    "dev-server": "webpack serve"
+    "dev-server": "webpack serve",
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "",
