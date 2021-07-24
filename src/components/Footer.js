@@ -5,12 +5,7 @@ import yt from "../../public/img/CarRelated/yt.svg";
 import insta from "../../public/img/CarRelated/insta.svg";
 import lin from "../../public/img/CarRelated/lin.svg";
 import SubscribeForm from './SubscribeForm';
-import ReactNotification from 'react-notifications-component';
-import "animate.css";
-import 'react-notifications-component/dist/theme.css';
 import {Link} from 'react-router-dom';
-
-
 
 const Footer = () => (
     <div className="Footer">

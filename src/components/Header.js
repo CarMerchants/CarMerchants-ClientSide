@@ -2,8 +2,6 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import close from '../../public/img/CarRelated/letter-x.png';
 
-
-
 const Header = () => (
     <div class = "Header">
         <div className = "Comp-Logo">

@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 import { AppRouter } from './router/AppRouter';
 import './style/style.scss';
 
-
-
 const jsx = (
     <div>
         <AppRouter />
