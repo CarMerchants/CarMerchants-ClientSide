@@ -1,11 +1,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import close from '../../public/img/CarRelated/letter-x.png';
+import logo from '../../public/img/CompanyRelated/CarLogo.png';
 
 const Header = () => (
     <div class = "Header">
         <div className = "Comp-Logo">
-            <h1>Car<span>Merchants</span></h1>
+            //1>Car<span>Merchants</span></h1>
+            <img src={logo} />
         </div>
         <div className = "HamBurgers">
             <div className = "Burgers"></div>
