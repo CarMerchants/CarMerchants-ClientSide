@@ -47,7 +47,8 @@ const Footer = () => (
                <a>Merceds Benz</a> |&nbsp; 
                <a>Toyota</a> |&nbsp;
                <a>Chevrolet</a> |&nbsp;
-               <a>Ford</a> 
+               <a>Ford</a> |&nbsp;
+               <a>Kia</a> 
             </span>
         </div>
         <div className = "newsLetter">
