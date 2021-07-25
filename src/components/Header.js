@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import close from '../../public/img/CarRelated/letter-x.png';
-import logo from '../../public/img/CompanyRelated/CarLogo.png';
 
 const Header = () => (
     <div class = "Header">
