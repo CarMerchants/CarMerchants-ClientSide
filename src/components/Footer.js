@@ -24,9 +24,7 @@ const Footer = () => (
             <span>
                 <a href = "/team">The Team</a> |&nbsp;
                 <a href = "/join_us">Join Us</a> |&nbsp;
-                <BrowserRouter>
-                <Link to = "/contact_us">Contact Us</Link> |&nbsp;
-                </BrowserRouter>
+                <a to = "/contact_us">Contact Us</a> |&nbsp;
                 <a href = "/blog">Blog</a> |&nbsp;
                 <a href = "/sitemap">Sitemap</a>
             </span>

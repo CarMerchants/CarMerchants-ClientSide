@@ -6,8 +6,7 @@ import logo from '../../public/img/CompanyRelated/CarLogo.png';
 const Header = () => (
     <div class = "Header">
         <div className = "Comp-Logo">
-            //1>Car<span>Merchants</span></h1>
-            <img src={logo} />
+            <h1>Car<span>Merchants</span></h1>
         </div>
         <div className = "HamBurgers">
             <div className = "Burgers"></div>
