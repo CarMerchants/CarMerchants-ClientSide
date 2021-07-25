@@ -5,7 +5,7 @@ import yt from "../../public/img/CarRelated/yt.svg";
 import insta from "../../public/img/CarRelated/insta.svg";
 import lin from "../../public/img/CarRelated/lin.svg";
 import SubscribeForm from './SubscribeForm';
-import {Link} from 'react-router-dom';
+import {Link,BrowserRouter} from 'react-router-dom';
 import {links} from './sections/ImportantLinks';
 
 const Footer = () => (
@@ -24,7 +24,9 @@ const Footer = () => (
             <span>
                 <a href = "/team">The Team</a> |&nbsp;
                 <a href = "/join_us">Join Us</a> |&nbsp;
-                <a href = "/contact_us">Contact Us</a> |&nbsp;
+                <BrowserRouter>
+                <Link to = "/contact_us">Contact Us</Link> |&nbsp;
+                </BrowserRouter>
                 <a href = "/blog">Blog</a> |&nbsp;
                 <a href = "/sitemap">Sitemap</a>
             </span>
