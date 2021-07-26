@@ -22,11 +22,11 @@ const Footer = () => (
         <div className = "TopBrands">
             <h3>Useful Links</h3>
             <span>
-                <Link to = "/team">The Team</Link> |&nbsp;
-                <Link to = "/join_us">Join Us</Link> |&nbsp;
-                <Link to = "/contact_us">Contact Us</Link> |&nbsp;
-                <Link to = "/blog">Blog</Link> |&nbsp;
-                <Link to = "/sitemap">Sitemap</Link>
+                <Link id = "footer-btn" to = "/team">The Team</Link> |&nbsp;
+                <Link id = "footer-btn" to = "/join_us">Join Us</Link> |&nbsp;
+                <Link id = "footer-btn" to = "/contact_us">Contact Us</Link> |&nbsp;
+                <Link id = "footer-btn" to = "/blog">Blog</Link> |&nbsp;
+                <Link id = "footer-btn" to = "/sitemap">Sitemap</Link>
             </span>
 
         </div>

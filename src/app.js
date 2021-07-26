@@ -24,3 +24,8 @@ if(CloseNav){
         document.querySelector(".NavBar").style.display = "none";
     })
 }
+
+const footerBtn = document.getElementById("footer-btn");
+footerBtn.addEventListener("click" , () => {
+    window.scrollTo = "0";
+})
