@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { HashRouter } from 'react-router-dom';
 import { AppRouter } from './router/AppRouter';
 import './style/style.scss';
 
 const jsx = (
-    <div>
+    <HashRouter>
         <AppRouter />
-    </div>
+    </HashRouter>
 );
 
 ReactDOM.render(jsx,document.getElementById("app"));

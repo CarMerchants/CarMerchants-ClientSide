@@ -12,7 +12,6 @@ import SiteMapPage from '../components/SiteMapPage';
 
 export const AppRouter = () => (
     <div>
-        <HashRouter>
             <Header />
             <Switch>
                 <Route path = "/" component={HomePage} exact = {true}/>
@@ -24,7 +23,6 @@ export const AppRouter = () => (
                 <Route component = {NotFound}/>
             </Switch>
             <Footer/>
-        </HashRouter>
     </div>
 );
 
