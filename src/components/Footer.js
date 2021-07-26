@@ -24,7 +24,7 @@ const Footer = () => (
             <span>
                 <Link to = "/team">The Team</Link> |&nbsp;
                 <Link to = "/join_us">Join Us</Link> |&nbsp;
-                <a href = "/contact_us">Contact Us</a> |&nbsp;
+                <a href = "https://carmerchants.github.io/CarMerchants-ClientSide/public/#/contact_us">Contact Us</a> |&nbsp;
                 <Link to = "/blog">Blog</Link> |&nbsp;
                 <Link to = "/sitemap">Sitemap</Link>
             </span>
