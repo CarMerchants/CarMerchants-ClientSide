@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { HashRouter } from 'react-router-dom';
 import { AppRouter } from './router/AppRouter';
 import './style/style.scss';
+import scrollTop from './functions/scrollTop';
 
 const jsx = (
     <HashRouter>
@@ -25,7 +26,4 @@ if(CloseNav){
     })
 }
 
-const footerBtn = document.getElementById("footer-btn");
-footerBtn.addEventListener("click" , () => {
-    window.scrollTo = "0";
-})
+scrollTop();
