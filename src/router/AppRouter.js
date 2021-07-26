@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch,HashRouter } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import HomePage from '../components/HomePage';
@@ -12,7 +12,7 @@ import SiteMapPage from '../components/SiteMapPage';
 
 export const AppRouter = () => (
     <div>
-        <BrowserRouter>
+        <HashRouter>
             <Header />
             <Switch>
                 <Route path = "/" component={HomePage} exact = {true}/>
@@ -24,7 +24,7 @@ export const AppRouter = () => (
                 <Route component = {NotFound}/>
             </Switch>
             <Footer/>
-        </BrowserRouter>
+        </HashRouter>
     </div>
 );
 
