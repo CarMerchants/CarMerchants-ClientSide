@@ -41,12 +41,16 @@ export default class SubscribeForm extends React.Component {
             }))
             return ;
         }
+        this.setState(() => ({
+            subscribed : true,
+            message : "Subscribing... (If there is a delay, check your network)",
+            color : "rgb(0,200,5)"
+        }));
         database.ref("EMAILS").push({
             email : this.state.email,
         }).then(() => {
             this.setState(() => ({
                 email : '',
-                subscribed : true,
                 message : "You are Subscribed! Best decision you've ever made!",
                 color : "rgb(0,200,5)",
             }));
@@ -55,7 +59,12 @@ export default class SubscribeForm extends React.Component {
                 text : "You are successfully Subscribed for the newsletter",
                 icon : "success"
             });
-        })
+        }).catch(() => {
+            this.setState(()=>({
+                message : "There Was Some Error While Subscribing You",
+            }));
+            return;
+        });
     }
 
     render(){
@@ -63,7 +72,7 @@ export default class SubscribeForm extends React.Component {
             <div>
                 <img src = {snacks}/>
                 <div className = "Subscribed">
-                    {this.state.subscribed && <p style = {{color : this.state.color}}>You are Subscribed! Best decision you've ever made!</p>}
+                    {this.state.subscribed && <p style = {{color : this.state.color}}>{this.state.message}</p>}
                 </div>
                 { this.state.subscribed == false &&
                 <div className = "SubsCriberForm">
