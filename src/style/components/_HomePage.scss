@@ -90,9 +90,10 @@
     margin-top: -.5%;
     margin-bottom: 1%;
     padding: -2rem 0rem;
-    font-family: 'Yomogi', cursive;
-    font-size: 2.2rem;
-    font-weight: bold;
+    font-size: 1.8rem;
+    font-family: "Ubuntu","Helvetica","Arial",sans-serif;
+    word-spacing: .25rem;
+    letter-spacing: .15rem;
 }
 
 @media (max-width:$desktop-breakpoint) and (min-width : $desktop-breakpoint-1){

@@ -12,7 +12,6 @@ import choose from '../../public/img/CarRelated/choose_from_the_best_pre_owned_c
 import test_drive from '../../public/img/CarRelated/test_drive.png';
 import ImgWithText from './sections/ImgWithText';
 
-
 const HomePage = () => (
     <div className = "HomePage">
         <h1>Select your car at the best price</h1>
