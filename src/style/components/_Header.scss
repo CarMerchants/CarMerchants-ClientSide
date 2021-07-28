@@ -71,8 +71,13 @@
     color:  $profit-green;
 }
 
+.Comp-Logo {
+    display: flex;
+    justify-content: center;
+}
+
 .Comp-Logo img{
-    width: 10rem;
+    width: 9rem;
     height: 7rem;
 }
 
@@ -89,6 +94,10 @@
 
 
 @media (max-width : $desktop-breakpoint){
+    .Comp-Logo img{
+        width: 8rem;
+        height: 5rem;
+    }
     .Burgers{
         width: 3rem;
         height: .5rem;
