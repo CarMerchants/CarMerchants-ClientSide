@@ -4,30 +4,33 @@
     right: 0%;
     justify-content: center;
     align-items: center;
-    margin-top: 15%;
-
+    top: 40%;
 }
 
 .FeedBack__btn{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 1rem;
-    padding: .8rem;
+    padding: 1rem;
     border-radius: 2rem;
     font-size: medium;
     word-break: break-all;
     cursor: pointer;
+    border: none;
+    background-color: rgb(237, 38, 71);
+    color: white;
 }
 
 .FeedBackForm{
     display: none;
     flex-direction: column;
     width: 100%;
-    border: 1px solid black;
     padding: 1rem;
 }
 
 .FeedBackForm button{
     width: 100%;
+    padding: 1%;
 }
 
