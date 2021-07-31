@@ -1,11 +1,13 @@
 import React from 'react';
 import ContactUsForm from './ContactUsForm';
 import ErrorButton from './ErrorButton';
+import FeedBack from './sections/FeedBack';
 import {links} from './sections/ImportantLinks';
 
 
 const ContactUsPage = () => (
     <div className = "MainContactUs">
+        <FeedBack />
         <div className = "ContactUs">
             <div className = "ContactUs__heading">
                 <h3>What Can We Help You With?</h3>

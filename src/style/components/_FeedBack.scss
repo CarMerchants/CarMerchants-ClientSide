@@ -1,0 +1,33 @@
+.FeedBack{
+    display: flex;
+    position: fixed;
+    right: 0%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+
+}
+
+.FeedBack__btn{
+    display: flex;
+    justify-content: center;
+    width: 1rem;
+    padding: .8rem;
+    border-radius: 2rem;
+    font-size: medium;
+    word-break: break-all;
+    cursor: pointer;
+}
+
+.FeedBackForm{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.FeedBackForm button{
+    width: 100%;
+}
+

@@ -9,6 +9,7 @@ import ProductPage from '../components/ProductPage';
 import TeamPage from '../components/TeamPage';
 import BlogPage from '../components/BlogPage';
 import SiteMapPage from '../components/SiteMapPage';
+import FeedBack from '../components/sections/FeedBack';
 
 export const AppRouter = () => (
     <div>
