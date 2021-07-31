@@ -53,9 +53,3 @@
     text-align: center;
     border:3px solid $blue;
 }
-
-@media (max-width : $desktop-breakpoint){
-    .FeedBack__btn{
-        padding: .5rem;
-    }
-}
