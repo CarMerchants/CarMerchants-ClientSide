@@ -20,6 +20,8 @@
     border: none;
     background-color: rgb(237, 38, 71);
     color: white;
+    outline: none;
+    align-content: center;
 }
 
 .FeedBackForm{
@@ -27,10 +29,27 @@
     flex-direction: column;
     width: 100%;
     padding: 1rem;
+    outline: none;
 }
 
 .FeedBackForm button{
     width: 100%;
-    padding: 1%;
+    padding: 4%;
+    outline: none;
+    background-color: $blue;
+    border: none;
+    border-radius: 2rem;
+    color: white;
+    letter-spacing: .2rem;
+    font-size: medium;
+}
+
+.FeedBackForm textarea{
+    outline: none;
+    font-size: medium;
+    letter-spacing: .2rem;
+    border-radius: .5rem;
+    text-align: center;
+    border:3px solid $blue;
 }
 

@@ -25,7 +25,7 @@ export default class FeedBackForm extends React.Component {
                     <textarea
                         value = {this.state.feedback}
                         onChange = {this.onFeedBack}
-                        placeholder = "Write your feedback here..."
+                        placeholder = "Write your feedback here"
                         rows = "10"
                         cols = "30"
                     >
