@@ -1,5 +1,7 @@
 import React from 'react';
-import database from '../../firebase/firebase';
+import { processLoginLogout } from '../../action/auth';
+import database, { googleAuthProvider } from '../../firebase/firebase';
+import {firebase} from '../../firebase/firebase';
 
 export default class FeedBackForm extends React.Component {
     constructor(props){
@@ -22,14 +24,31 @@ export default class FeedBackForm extends React.Component {
     
     onSubmit(e){
         e.preventDefault();
-        this.setState(() => ({
-            feedback : "",
-        }));
-        database.ref("Feedback").push({
-            feedback : this.state.feedback,
-        }).then(() => {
-            console.log("The feedback is submitted successfully....");
-        });
+        const val = document.getElementById("log__btn").innerHTML;
+        if(val == "Logout"){
+            const user = firebase.auth().currentUser;
+            database.ref(`users/${user.uid}/feedback`).push({
+                feedback : this.state.feedback,
+                name : user.displayName,
+                profile_pic : user.photoURL
+            }).then(() => {
+                this.setState(() => ({feedback : ""}));
+                console.log("Your feedback is submitted successfully");
+            })
+        }
+        else{
+            firebase.auth().signInWithPopup(googleAuthProvider).then(() => {
+                const user = firebase.auth().currentUser;
+                database.ref(`users/${user.uid}/feedback`).push({
+                    feedback : this.state.feedback,   
+                    name : user.displayName,
+                    profile_pic : user.photoURL
+                }).then(() => {
+                    this.setState(() => ({feedback : ""}));
+                    console.log("Your feedback is submitted successfully");
+                })
+            })
+        }
     }
 
     render(){

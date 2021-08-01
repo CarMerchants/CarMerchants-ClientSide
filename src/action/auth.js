@@ -17,10 +17,8 @@ export const processLoginLogout = () => {
     console.log(val);
     if(val == "Login"){
         return firebase.auth().signInWithPopup(googleAuthProvider).then(() => {
-            document.getElementById("log__btn").innerHTML = "Logout";
         });
     }else{
-        document.getElementById("log__btn").innerHTML = "Login";
         return firebase.auth().signOut();
     }
 };
