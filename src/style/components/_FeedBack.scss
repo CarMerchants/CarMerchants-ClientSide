@@ -56,14 +56,3 @@
     border:3px solid $blue;
 }
 
-@media (max-width:$desktop-breakpoint) and (min-width : $desktop-breakpoint-1){
-    .FeedBack{
-        top: 30%;
-    }
-}
-
-@media (max-width : $desktop-breakpoint){
-    .FeedBack{
-        top: 30%;
-    }
-}
