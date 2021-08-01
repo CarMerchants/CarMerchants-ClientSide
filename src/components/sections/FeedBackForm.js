@@ -20,14 +20,14 @@ export default class FeedBackForm extends React.Component {
 
     render(){
         return (
-            <div className = "FeedBackForm" id = "FeedBack">
-                <form>
+            <div>
+                <form className = "FeedBackForm" id = "FeedBack">
                     <textarea
                         value = {this.state.feedback}
                         onChange = {this.onFeedBack}
                         placeholder = "Write your feedback here"
                         rows = "10"
-                        cols = "30"
+                        cols = "20"
                     >
                     </textarea><br/>
                     <button type = "submit">Submit</button>

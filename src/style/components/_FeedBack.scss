@@ -14,11 +14,11 @@
     width: 1rem;
     padding: 1rem;
     border-radius: 2rem;
-    font-size: medium;
+    font-size: small;
     word-break: break-all;
     cursor: pointer;
     border: none;
-    background-color: rgb(237, 38, 71);
+    background-color: rgba(237, 38, 71, 0.589);
     color: white;
     outline: none;
     align-content: center;
@@ -27,22 +27,23 @@
 .FeedBackForm{
     display: none;
     flex-direction: column;
+    align-items: center;
     width: 100%;
-    padding: 1rem;
+    padding: .2rem;
     outline: none;
     transition: 1s ease;
 }
 
 .FeedBackForm button{
-    width: 100%;
-    padding: 4%;
+    width: 40%;
+    padding: 2%;
     outline: none;
     background-color: $blue;
     border: none;
     border-radius: 2rem;
     color: white;
     letter-spacing: .2rem;
-    font-size: medium;
+    font-size: small;
 }
 
 .FeedBackForm textarea{

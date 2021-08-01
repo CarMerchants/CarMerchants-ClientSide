@@ -1,11 +1,9 @@
 import React from 'react';
 import TeamMate from './sections/TeamMate';
 import ford from '../../public/img/CarRelated/ford.png' 
-import FeedBack from './sections/FeedBack';
 
 const TeamPage = () => (
     <div className = "Team">
-        <FeedBack />
         <div>
             <TeamMate profile_pic = {ford} name = "Yash Rohera" Designation = "CTO & Co-Founder" info = "I am Yash Rohera the CTO of the Car Merchants."/>
         </div>

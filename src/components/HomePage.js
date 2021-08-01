@@ -11,11 +11,9 @@ import doorstep from '../../public/img/CarRelated/online_payment_doorstep_delive
 import choose from '../../public/img/CarRelated/choose_from_the_best_pre_owned_cars.png';
 import test_drive from '../../public/img/CarRelated/test_drive.png';
 import ImgWithText from './sections/ImgWithText';
-import FeedBack from './sections/FeedBack';
 
 const HomePage = () => (
     <div className = "HomePage">
-        <FeedBack />
         <h1>Select your car at the best price</h1>
         <div className = "RowSec">
             <CarLogos />
