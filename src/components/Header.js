@@ -27,6 +27,9 @@ const Header = () => (
                 <NavLink className = "Option__text" activeClassName="isActive" to = "/team" >Team</NavLink>
             </div>
         </div>
+        <div className = "login__btn">
+            <button>Login</button>
+        </div>
     </div>
 );
 

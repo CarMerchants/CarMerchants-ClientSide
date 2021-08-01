@@ -91,7 +91,24 @@
     margin-bottom: auto;
 }
 
+.login__btn{
+    display: flex;
+    justify-content: center;
+}
 
+.login__btn button{
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    font-size: $m-size;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    padding: .5rem;
+    border: 1px solid $profit-green;
+}
 
 @media (max-width : $desktop-breakpoint){
     .Comp-Logo img{
