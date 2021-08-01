@@ -40,7 +40,7 @@ export default class FeedBackForm extends React.Component {
                         value = {this.state.feedback}
                         onChange = {this.onFeedBack}
                         placeholder = "Write your feedback here"
-                        rows = "10"
+                        rows = "5"
                         cols = "20"
                         required = {true}
                     >
