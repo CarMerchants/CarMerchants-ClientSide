@@ -1,4 +1,5 @@
 import React from 'react';
+import database from '../../firebase/firebase';
 
 export default class FeedBackForm extends React.Component {
     constructor(props){
@@ -8,6 +9,7 @@ export default class FeedBackForm extends React.Component {
         };
 
         this.onFeedBack = this.onFeedBack.bind(this);
+        this.onSubmit = this.onSubmit.bind(this);
     }
 
     onFeedBack(e){
@@ -17,17 +19,30 @@ export default class FeedBackForm extends React.Component {
             feedback : val ,
         }));
     };
+    
+    onSubmit(e){
+        e.preventDefault();
+        this.setState(() => ({
+            feedback : "",
+        }));
+        database.ref("Feedback").push({
+            feedback : this.state.feedback,
+        }).then(() => {
+            console.log("The feedback is submitted successfully....");
+        });
+    }
 
     render(){
         return (
             <div>
-                <form className = "FeedBackForm" id = "FeedBack">
+                <form onSubmit = {this.onSubmit} className = "FeedBackForm" id = "FeedBack">
                     <textarea
                         value = {this.state.feedback}
                         onChange = {this.onFeedBack}
                         placeholder = "Write your feedback here"
                         rows = "10"
                         cols = "20"
+                        required = {true}
                     >
                     </textarea><br/>
                     <button type = "submit">Submit</button>
