@@ -2,6 +2,8 @@
     display: flex;
     color: white;
     margin: 0;
+    bottom: 0%;
+    float: inline-end;
     padding: 0% .5%;
     justify-content: space-between;
     background-color: #465166;
@@ -97,6 +99,8 @@
     color: white;
     text-decoration: none;
 }
+
+
 
 @media (max-width : $desktop-breakpoint){
     .Social-Media h3{
