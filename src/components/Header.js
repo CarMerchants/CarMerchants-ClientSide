@@ -2,6 +2,8 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import close from '../../public/img/CarRelated/letter-x.png';
 import CompanyLogo from '../../public/img/CompanyRelated/CompanyLogoWithTitle.png';
+import { processLoginLogout } from '../action/auth';
+import { SetBtnInfo } from '../action/auth';
 
 const Header = () => (
     <div class = "Header">
@@ -26,9 +28,9 @@ const Header = () => (
             <div className = "Option">
                 <NavLink className = "Option__text" activeClassName="isActive" to = "/team" >Team</NavLink>
             </div>
-        </div>
-        <div className = "login__btn">
-            <button>Login</button>
+            <div className = "login__btn Option">
+                <button id ="log__btn" onClick = {processLoginLogout} className = "Option__text"></button>
+            </div>
         </div>
     </div>
 );

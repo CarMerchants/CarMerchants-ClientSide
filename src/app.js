@@ -4,6 +4,8 @@ import { HashRouter } from 'react-router-dom';
 import { AppRouter } from './router/AppRouter';
 import './style/style.scss';
 import scrollTop from './functions/scrollTop';
+import {firebase} from './firebase/firebase';
+import { SetBtnInfo } from './action/auth';
 
 const jsx = (
     <HashRouter>
@@ -26,4 +28,14 @@ if(CloseNav){
     })
 }
 
+firebase.auth().onAuthStateChanged((user) => {
+    if(user){
+        console.log("The user is logged in");
+    }else{
+        console.log("The user is logged out!!");
+    }
+})
+
+//Functions...
 scrollTop();
+SetBtnInfo();

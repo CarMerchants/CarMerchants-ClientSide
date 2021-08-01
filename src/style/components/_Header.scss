@@ -29,9 +29,8 @@
 .NavBar {
     display: flex;
     width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-between;
+    margin-left:40%;
+    justify-content: space-around;
     padding: .5%;
 }
 
@@ -65,6 +64,7 @@
     align-items: center;
     justify-content: center;
     transition:  0.8s ease;
+    margin-left: 10%;
 }
 
 .Option__text:hover{
@@ -97,7 +97,7 @@
 }
 
 .login__btn button{
-    width: 5rem;
+    width: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,7 +106,6 @@
     text-align: center;
     cursor: pointer;
     background-color: white;
-    padding: .5rem;
     border: 1px solid $profit-green;
 }
 
@@ -154,5 +153,6 @@
     .Option{
         width: 40%;
         margin-top: 6%;
+        margin-left: 0%;
     }
 }
