@@ -100,12 +100,17 @@
     width: 6rem;
     display: flex;
     justify-content: center;
+    border: none;
+    font-weight: bold;
     align-items: center;
     height: 3rem;
     font-size: $m-size;
     text-align: center;
     cursor: pointer;
     background-color: white;
+}
+
+.login__btn :hover {
     border: 1px solid $profit-green;
 }
 
