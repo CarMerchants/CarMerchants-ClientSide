@@ -1,7 +1,7 @@
 import React from 'react';
 import ContactUsPage from "../components/ContactUsPage";
 import { firebase,googleAuthProvider } from "../firebase/firebase"
-
+import user_img from '../../public/img/CompanyRelated/GuestLogin.png';
 
 export const SetBtnInfo = () => {
     firebase.auth().onAuthStateChanged((user) => {
@@ -12,6 +12,7 @@ export const SetBtnInfo = () => {
         }else{
             document.getElementById("log__btn").innerHTML = "Login";
             document.getElementById("login-user").innerHTML = "Welcome Guest"; 
+            document.getElementById("user-img").src = user_img;
         }
     })
 };
