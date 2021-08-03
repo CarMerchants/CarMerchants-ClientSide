@@ -31,10 +31,10 @@
 .NavBar {
     display: flex;
     width: 50%;
-    //margin-left:15%;
+    margin-right:auto;
+    margin-left: auto;
     justify-content: space-between;
     padding: .5%;
-    border: 1px solid black;
 }
 
 .Close{
@@ -188,6 +188,8 @@
         right: 0%;
         top: 0;
         display: none;
+        margin-left: 0;
+        margin-right: 0;
     
     }
     .login-user img {
