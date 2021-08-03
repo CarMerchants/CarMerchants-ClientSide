@@ -2,8 +2,9 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import close from '../../public/img/CarRelated/letter-x.png';
 import CompanyLogo from '../../public/img/CompanyRelated/CompanyLogoWithTitle.png';
-import { processLoginLogout } from '../action/auth';
-import { SetBtnInfo } from '../action/auth';
+import { processLoginLogout, userDetails } from '../action/auth';
+import { SetBtnInfo} from '../action/auth';
+import {firebase} from '../firebase/firebase';
 
 const Header = () => (
     <div class = "Header">
@@ -28,7 +29,7 @@ const Header = () => (
             </div>
         </div>
         <div className = "login-user">
-            <h1>Welcome, Guest</h1>
+            <h2 id = "login-user"></h2>
         </div>
         <div className = "HamBurgers">
             <div className = "Burgers"></div>
