@@ -5,6 +5,7 @@ import CompanyLogo from '../../public/img/CompanyRelated/CompanyLogoWithTitle.pn
 import { processLoginLogout, userDetails } from '../action/auth';
 import { SetBtnInfo} from '../action/auth';
 import {firebase} from '../firebase/firebase';
+import user_img from '../../public/img/CompanyRelated/GuestLogin.png';
 
 const Header = () => (
     <div class = "Header">
@@ -29,7 +30,7 @@ const Header = () => (
             </div>
         </div>
         <div className = "login-user">
-            <h2 id = "login-user"></h2>
+            <img id = "user-img" src = {user_img}/><h2 id = "login-user"></h2>
         </div>
         <div className = "HamBurgers">
             <div className = "Burgers"></div>

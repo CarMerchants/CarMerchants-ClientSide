@@ -2,7 +2,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    align-content: center;
     position: fixed;
+    
     top: 0;
     left: 0;
     right: 0;
@@ -22,15 +24,15 @@
 .Header h1{
     font-size: 2.5rem;
     cursor: pointer;
-    margin-left: .2%;
+    //margin-left: .2%;
 }
 
 
 .NavBar {
     display: flex;
     width: 50%;
-    margin-left:15%;
-    justify-content: space-around;
+    //margin-left:15%;
+    justify-content: space-between;
     padding: .5%;
     border: 1px solid black;
 }
@@ -43,7 +45,7 @@
 .Close img {
     width: 2rem;
     height: 2rem;
-    padding: 15%;
+    //padding: 15%;
     border: 1px solid black;
     border-radius: 100rem;
 
@@ -53,7 +55,7 @@
     text-decoration: none;
     font-family: "Capsule Sans Text", sans-serif;
     font-size: 2rem;
-    padding: 2%;
+    //padding: 2%;
     color: black;
 }
 
@@ -65,7 +67,7 @@
     align-items: center;
     justify-content: center;
     transition:  0.8s ease;
-    margin-left: 10%;
+    //margin-left: 10%;
 }
 
 .Option__text:hover{
@@ -97,11 +99,17 @@
     flex-direction: row;
     font-size: 1rem;
     text-align: center;
-    width: 25rem;
-    height: 5rem;
-    margin-left: 5%;
+    // width: 25rem;
+    // height: 5rem;
+    //margin-left: 5%;
     align-items: center;
     justify-content: center;
+}
+.login-user img{
+    width: 5rem;
+    height: 5rem;
+    margin-right: .5rem;
+    border-radius: 100rem;
 }
 
 .login__btn{
@@ -129,7 +137,11 @@
 
 @media (max-width : $desktop-breakpoint) and (min-width : $desktop-breakpoint-1){
     .login-user{
-        margin-right: -13%;
+        margin-right: -20%;
+    }
+    .login-user img {
+        width: 4rem;
+        height: 4rem;
     }
 }
 
@@ -160,9 +172,10 @@
     }
     .login-user{
         margin-left: 40%;
+        width: 28rem;
     }
     .login-user h1{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .NavBar{
         position: fixed;
@@ -176,6 +189,10 @@
         top: 0;
         display: none;
     
+    }
+    .login-user img {
+        width: 4rem;
+        height: 4rem;
     }
     .Option__text{
         font-size: 1.5rem;
