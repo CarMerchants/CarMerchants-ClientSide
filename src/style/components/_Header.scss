@@ -29,9 +29,10 @@
 .NavBar {
     display: flex;
     width: 50%;
-    margin-left:40%;
+    margin-left:15%;
     justify-content: space-around;
     padding: .5%;
+    border: 1px solid black;
 }
 
 .Close{
@@ -91,6 +92,19 @@
     margin-bottom: auto;
 }
 
+.login-user{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    font-size: 1rem;
+    text-align: center;
+    width: 25rem;
+    height: 5rem;
+    margin-left: 5%;
+    align-items: center;
+    justify-content: center;
+}
+
 .login__btn{
     display: flex;
     justify-content: center;
@@ -112,6 +126,12 @@
 
 .login__btn :hover {
     border: 1px solid $profit-green;
+}
+
+@media (max-width : $desktop-breakpoint) and (min-width : $desktop-breakpoint-1){
+    .login-user{
+        margin-right: -13%;
+    }
 }
 
 @media (max-width : $desktop-breakpoint){
@@ -138,6 +158,13 @@
         margin-top: 0%;
         margin-bottom: -1%;
         align-items: center;
+    }
+    .login-user{
+        margin-left: 45%;
+        width: 15rem;
+    }
+    .login-user h1{
+        font-size: 1.5rem;
     }
     .NavBar{
         position: fixed;
