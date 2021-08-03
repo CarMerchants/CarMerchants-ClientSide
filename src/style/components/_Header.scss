@@ -110,6 +110,7 @@
     height: 5rem;
     margin-right: .5rem;
     border-radius: 100rem;
+    background: $gold;
 }
 
 .login__btn{
@@ -171,7 +172,8 @@
         align-items: center;
     }
     .login-user{
-        margin-left: 40%;
+        margin-left:auto;
+        margin-right: auto;
         width: 28rem;
     }
     .login-user h1{
