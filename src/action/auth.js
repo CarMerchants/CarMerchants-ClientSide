@@ -11,7 +11,7 @@ export const SetBtnInfo = () => {
             document.getElementById("user-img").src = firebase.auth().currentUser.photoURL;
             document.getElementById("name").innerHTML = firebase.auth().currentUser.displayName+"!";
         }else{
-            document.getElementById("log__btn").innerHTML = "Log In";
+            document.getElementById("log__btn").innerHTML = "LogIn";
             document.getElementById("loginout-btn").innerHTML = "Log In";
             document.getElementById("user-img").src = user_img;
             document.getElementById("name").innerHTML = "guest!";

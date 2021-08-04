@@ -30,7 +30,7 @@
     position: fixed;
     flex-direction: column;
     background: white;
-    width: 15%;
+    width: 15rem;
     align-items: center;
     padding: 1%;
     right: 0%;
@@ -184,10 +184,6 @@
         width: 4rem;
         height: 4rem;
     }
-    .DropDown{
-        width: 20%;
-    }
-    
 }
 
 @media (max-width : $desktop-breakpoint){
@@ -236,7 +232,6 @@
     }
     .DropDown{
         top:5rem;
-        width : 35%;
     }
     .login-user img {
         width: 4rem;
