@@ -38,11 +38,10 @@ const Header = () => (
         <div className = "login-user">
             <img id = "user-img" src = {user_img}/><img id = "drop_down" src = {drop_down} />
         </div>
-        {/* <div className = "HamBurgers">
-            <div className = "Burgers"></div>
-            <div className = "Burgers"></div>
-            <div className = "Burgers"></div>
-        </div> */}
+        <div className = "DropDown">
+            <h4>Welcome, <span id = "name"></span></h4>
+            <button onClick = {processLoginLogout} id = "loginout-btn">Logout</button>
+        </div>
     </div>
 );
 

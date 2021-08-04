@@ -6,6 +6,7 @@ import './style/style.scss';
 import scrollTop from './functions/scrollTop';
 import {firebase} from './firebase/firebase';
 import { SetBtnInfo } from './action/auth';
+import { LoginStatus } from './functions/login-status';
 
 const jsx = (
     <HashRouter>
@@ -36,6 +37,8 @@ firebase.auth().onAuthStateChanged((user) => {
     }
 })
 
+
 //Functions...
 scrollTop();
 SetBtnInfo();
+LoginStatus();
