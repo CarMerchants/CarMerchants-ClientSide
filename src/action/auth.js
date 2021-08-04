@@ -7,11 +7,9 @@ export const SetBtnInfo = () => {
     firebase.auth().onAuthStateChanged((user) => {
         if(user){
             document.getElementById("log__btn").innerHTML = "Logout";
-            document.getElementById("login-user").innerHTML = firebase.auth().currentUser.displayName;
             document.getElementById("user-img").src = firebase.auth().currentUser.photoURL;
         }else{
             document.getElementById("log__btn").innerHTML = "Login";
-            document.getElementById("login-user").innerHTML = "Welcome Guest"; 
             document.getElementById("user-img").src = user_img;
         }
     })

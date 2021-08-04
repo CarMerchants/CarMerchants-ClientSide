@@ -6,9 +6,15 @@ import { processLoginLogout, userDetails } from '../action/auth';
 import { SetBtnInfo} from '../action/auth';
 import {firebase} from '../firebase/firebase';
 import user_img from '../../public/img/CompanyRelated/GuestLogin.png';
+import drop_down from '../../public/img/CompanyRelated/drop_down.png';
 
 const Header = () => (
     <div class = "Header">
+        <div className = "HamBurgers">
+            <div className = "Burgers"></div>
+            <div className = "Burgers"></div>
+            <div className = "Burgers"></div>
+        </div>
         <div className = "Comp-Logo">
             <img src = {CompanyLogo} />
         </div>
@@ -30,13 +36,13 @@ const Header = () => (
             </div>
         </div>
         <div className = "login-user">
-            <img id = "user-img" src = {user_img}/><h2 id = "login-user"></h2>
+            <img id = "user-img" src = {user_img}/><img id = "drop_down" src = {drop_down} />
         </div>
-        <div className = "HamBurgers">
+        {/* <div className = "HamBurgers">
             <div className = "Burgers"></div>
             <div className = "Burgers"></div>
             <div className = "Burgers"></div>
-        </div>
+        </div> */}
     </div>
 );
 

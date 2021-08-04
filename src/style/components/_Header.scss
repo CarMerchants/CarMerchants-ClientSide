@@ -37,6 +37,13 @@
     padding: .5%;
 }
 
+#drop_down{
+    width: 2rem;
+    height: 2rem;
+    background: white;
+    cursor: pointer;
+}
+
 .Close{
     display: none;
     cursor: pointer;
@@ -99,9 +106,7 @@
     flex-direction: row;
     font-size: 1rem;
     text-align: center;
-    // width: 25rem;
-    // height: 5rem;
-    //margin-left: 5%;
+    padding: 0;
     align-items: center;
     justify-content: center;
 }
@@ -137,8 +142,9 @@
 }
 
 @media (max-width : $desktop-breakpoint) and (min-width : $desktop-breakpoint-1){
-    .login-user{
-        margin-right: -20%;
+    .Comp-Logo {
+        margin-left: auto;
+        margin-right: auto;
     }
     .login-user img {
         width: 4rem;
@@ -172,9 +178,7 @@
         align-items: center;
     }
     .login-user{
-        margin-left:auto;
-        margin-right: auto;
-        width: 28rem;
+        
     }
     .login-user h1{
         font-size: 1.2rem;
