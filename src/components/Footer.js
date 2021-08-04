@@ -9,7 +9,7 @@ import {Link,BrowserRouter} from 'react-router-dom';
 import {links} from './sections/ImportantLinks';
 
 const Footer = () => (
-    <div className="Footer">
+    <footer className="Footer">
         <div className = "Social-Media">
             <h3>Keep In Touch</h3>
             <div className = "Social-Media__logo">
@@ -55,7 +55,7 @@ const Footer = () => (
         <div className = "newsLetter">
             <SubscribeForm />
         </div>
-    </div>
+    </footer>
 );
 
 export default Footer;

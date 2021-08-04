@@ -1,6 +1,7 @@
 import React from 'react';
 import ContactUsForm from './ContactUsForm';
 import ErrorButton from './ErrorButton';
+import Header from './Header';
 import FeedBack from './sections/FeedBack';
 import {links} from './sections/ImportantLinks';
 

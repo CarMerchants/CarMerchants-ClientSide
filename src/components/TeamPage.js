@@ -1,6 +1,7 @@
 import React from 'react';
 import TeamMate from './sections/TeamMate';
 import ford from '../../public/img/CarRelated/ford.png' 
+import Header from './Header';
 
 const TeamPage = () => (
     <div className = "Team">

@@ -83,12 +83,14 @@
 
 .Comp-Logo {
     display: flex;
-    justify-content: center;
+    justify-content: center;    
+    
 }
 
 .Comp-Logo img{
     width: 9rem;
     height: 7rem;
+    align-self:  flex-start;
 }
 
 .HamBurgers{
@@ -173,6 +175,7 @@
     }
     .Header{
         justify-content: space-between;
+        align-content: center;
         margin-top: 0%;
         margin-bottom: -1%;
         align-items: center;

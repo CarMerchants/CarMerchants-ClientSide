@@ -3,6 +3,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 7%;
+    flex-grow: 1;
 }
 
 .Team__Mate {
@@ -39,7 +40,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    word-break: break-all;
 }
 
 @media (max-width : $desktop-breakpoint) and (min-width : $desktop-breakpoint-1){
@@ -47,11 +47,10 @@
         flex-direction: column;
         justify-content: center;
         margin-top: 10.5%;
-        width: 40%;
+        width: 50%;
         margin-left: auto;
         margin-right: auto;
         align-content: center;
-
     }
 }
 
@@ -65,7 +64,7 @@
 
 
     .Team__Mate{
-        width: 90%;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
