@@ -13,8 +13,8 @@ import FeedBack from '../components/sections/FeedBack';
 import ProfilePage from '../components/ProfilePage';
 
 export const AppRouter = () => (
-    <div>   
-            <div className = "CommonClass">
+        <div className = "CommonClass">   
+            <div className = "main-content">
                 <Header/>
                 <Switch>
                     <Route path = "/" component={HomePage} exact = {true}/>
@@ -28,6 +28,6 @@ export const AppRouter = () => (
                 </Switch>
             </div>
             <Footer/>
-    </div>
+        </div>
 );
 

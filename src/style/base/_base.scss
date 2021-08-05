@@ -17,10 +17,16 @@ body {
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .CommonClass{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content{
     flex-grow: 1;
 }
 
