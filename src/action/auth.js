@@ -2,6 +2,8 @@ import React from 'react';
 import ContactUsPage from "../components/ContactUsPage";
 import { firebase,googleAuthProvider } from "../firebase/firebase"
 import user_img from '../../public/img/CompanyRelated/GuestLogin.png';
+import logout from '../../public/img/CompanyRelated/logout.png';
+
 
 export const details = {
     profile_pic : user_img,
@@ -10,13 +12,16 @@ export const details = {
 export  const SetBtnInfo = () => {
     firebase.auth().onAuthStateChanged((user) => {
         if(user){
-            document.getElementById("loginout-btn").innerHTML = "Log Out";
+            document.getElementById("loginout-btn-text").innerHTML = "Log Out";
             document.getElementById("user-img").src = firebase.auth().currentUser.photoURL;
             document.getElementById("name").innerHTML = firebase.auth().currentUser.displayName+"!";
+            document.getElementById("loginout-btn-img").style.display = "flex";
+            document.getElementById("loginout-btn-img").src = logout;
         }else{
-            document.getElementById("loginout-btn").innerHTML = "Log In";
+            document.getElementById("loginout-btn-text").innerHTML = "Log In";
             document.getElementById("user-img").src = user_img;
             document.getElementById("name").innerHTML = "guest!";
+            document.getElementById("loginout-btn-img").style.display = "none";
         }
     });
 };
@@ -43,13 +48,11 @@ export const userDetails = () => {
 };
 
 export const processLoginLogout = () => {
-    const val = document.getElementById("log__btn").style.display;
-    console.log(val);
-    if(val != "none"){
+    const val = document.getElementById("loginout-btn-text").innerHTML;
+    if(val != "Log Out"){
         return firebase.auth().signInWithPopup(googleAuthProvider).then(() => {
         });
     }else{
-        document.getElementById("log__btn").style.display = "flex";
         return firebase.auth().signOut();
     }
 };

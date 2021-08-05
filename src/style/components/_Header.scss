@@ -12,9 +12,7 @@
 
 
 
-.Header span {
-    color: $blue;
-}
+
 
 .Header h1{
     font-size: 2.5rem;
@@ -22,7 +20,7 @@
     //margin-left: .2%;
 }
 .DropDown{
-    position: fixed;
+    position: absolute;
     flex-direction: column;
     background: white;
     width: 22rem;
@@ -30,7 +28,8 @@
     padding: 1%;
     right: 0%;
     top: 7rem;
-    border: 1px solid black;
+    border: 1px solid rgba(128, 128, 128, 0.664);
+    border-bottom: 5px solid $profit-green;
     display: none;
     margin-left: 0;
     margin-right: 0;
@@ -69,6 +68,16 @@
     border-radius: 100rem;
 
 }
+.DropDown__imgbtn{
+    display: flex;
+    justify-content: center;
+}
+
+.DropDown__imgbtn img {
+    width: 2rem;
+    height: 2rem;
+    padding: 0rem .3rem;
+}
 
 .Option__text{
     text-decoration: none;
@@ -86,8 +95,6 @@
     align-items: center;
     justify-content: center;
     transition:  0.8s ease;
-    border: 1px solid black;
-    //margin-left: 10%;
 }
 
 .Option__text:hover{
@@ -96,7 +103,8 @@
 
 .Comp-Logo {
     display: flex;
-    justify-content: center;    
+    justify-content: flex-start; 
+    width: 10rem;   
     
 }
 
@@ -142,8 +150,9 @@
     font-size: 1rem;
     text-align: center;
     padding: 0;
+    width: 10rem;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 .login-user img{
     width: 5rem;

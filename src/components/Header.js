@@ -8,7 +8,8 @@ import {firebase} from '../firebase/firebase';
 import user_img from '../../public/img/CompanyRelated/GuestLogin.png';
 import drop_down from '../../public/img/CompanyRelated/drop_down.png';
 import  UpdateProf  from './sections/OptionModal';
-
+import cart from '../../public/img/CompanyRelated/cart.png';
+import logout from '../../public/img/CompanyRelated/logout.png';
 
 const Header = () => (
     <div class = "Header">
@@ -28,7 +29,7 @@ const Header = () => (
                 <NavLink id = "external-link-btn" className = "Option__text" activeClassName="isActive" exact={true} to = "/">Home</NavLink>
             </div>
             <div className = "Option">
-                <NavLink  id = "external-link-btn" className = "Option__text" activeClassName="isActive" to = "/products" >Products</NavLink>
+                <NavLink  id = "external-link-btn" className = "Option__text" activeClassName="isActive" to = "/products" >Buy Car</NavLink>
             </div>
             <div className = "Option">
                 <NavLink  id = "external-link-btn" className = "Option__text" activeClassName="isActive" to = "/products" >Reviews</NavLink>
@@ -41,9 +42,19 @@ const Header = () => (
             <img id = "user-img" src = {user_img}/><img id = "drop_down" src = {drop_down} />
         </div>
         <div className = "DropDown">
-            <h4>Welcome, <span id = "name"></span></h4>
+            <h3>Welcome, <span id = "name"></span></h3>
+            <button className = "DropDown__btn">
+                <div className = "DropDown__imgbtn">
+                <img src = {cart} />Cart
+                </div>
+            </button>
+            <button className = "DropDown__btn">Orders</button>
             <button className = "DropDown__btn"><Link className = "Link" to = "/profile">View Profile</Link></button>
-            <button onClick = {processLoginLogout} className ="DropDown__btn" id = "loginout-btn">Logout</button>
+            <button onClick = {processLoginLogout} className ="DropDown__btn" id = "loginout-btn">
+                <div className = "DropDown__imgbtn">
+                    <img id = "loginout-btn-img" src = {logout}/><span id = "loginout-btn-text">Log Out</span>
+                </div>
+            </button>
         </div>
     </div>
 );
