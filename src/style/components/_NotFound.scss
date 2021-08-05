@@ -1,9 +1,9 @@
 .Not-Found {
-    display: flex;
-    padding: 15%;
-    justify-content: center;
+    flex-grow: 1;
+    display: flex;    
     align-items: center;
     flex-direction: column;
+    margin: 2%;
 }
 
 .Not-Found .GoHome-btn{
@@ -12,8 +12,8 @@
     color: black;
     justify-content: center;
     align-items: center;
-    width: 35%;
-    padding: 2%;
+    width: 30%;
+    padding: 1%;
     background: $orange;
     font-weight: bold;
     font-size: 2rem;
@@ -25,7 +25,6 @@
 @media (max-width : $desktop-breakpoint){
     .Not-Found{
         padding: 0%;
-        padding-bottom: 3%;
     }
 
     .Not-Found h1 {

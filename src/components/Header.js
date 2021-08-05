@@ -36,9 +36,6 @@ const Header = () => (
             <div className = "Option">
                 <NavLink id = "external-link-btn" className = "Option__text" activeClassName="isActive" to = "/team" >Team</NavLink>
             </div>
-            <div className = "login__btn Option">
-                <button id ="log__btn" onClick = {processLoginLogout} className = "Option__text"></button>
-            </div>
         </div>
         <div className = "login-user">
             <img id = "user-img" src = {user_img}/><img id = "drop_down" src = {drop_down} />

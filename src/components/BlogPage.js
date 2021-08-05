@@ -3,7 +3,7 @@ import ErrorButton from './ErrorButton';
 
 const BlogPage = () => (
     <div className = "BlogPage">
-        <ErrorButton message = "Coming Soon..." />
+        <ErrorButton message = "Coming Soon" />
     </div>
 );
 
