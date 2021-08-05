@@ -10,6 +10,7 @@ import TeamPage from '../components/TeamPage';
 import BlogPage from '../components/BlogPage';
 import SiteMapPage from '../components/SiteMapPage';
 import FeedBack from '../components/sections/FeedBack';
+import ProfilePage from '../components/ProfilePage';
 
 export const AppRouter = () => (
     <div>
@@ -21,6 +22,7 @@ export const AppRouter = () => (
                 <Route path = "/team" component={TeamPage} />
                 <Route path = "/blog" component = {BlogPage}/>
                 <Route path = "/sitemap" component = {SiteMapPage}/>
+                <Route path = "/profile" component = {ProfilePage}/>
                 <Route component = {NotFound}/>
             </Switch>
             <Footer/>

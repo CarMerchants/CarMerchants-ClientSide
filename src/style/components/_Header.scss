@@ -2,20 +2,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    align-content: center;
-    position: fixed;
-    
+    align-content: center; 
     top: 0;
     left: 0;
     right: 0;
     background-color:white;
-    margin-bottom: 1%;
     border-bottom: 1px solid rgba(128, 128, 128, 0.664);
 }
 
-.HomePage {
-    margin-top: 5%;
-}
+
 
 .Header span {
     color: $blue;
@@ -159,6 +154,11 @@
     display: flex;
     justify-content: center;
     border: none;
+}
+
+.Link{
+    color: white;
+    text-decoration: none;
 }
 
 .login__btn button{

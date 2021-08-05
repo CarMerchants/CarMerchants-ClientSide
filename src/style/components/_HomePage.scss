@@ -103,7 +103,6 @@
 @media (max-width:$desktop-breakpoint) and (min-width : $desktop-breakpoint-1){
     .HomePage{
         text-align: center;
-        margin-top: 6.5%;
     } 
     .RowSec {
         flex-direction: column;
@@ -153,7 +152,6 @@
 @media (max-width : $desktop-breakpoint-1){
     .HomePage{
         text-align: center;
-        margin-top: 16%;
     }
     .RowSec {
         flex-direction: column;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import close from '../../public/img/CarRelated/letter-x.png';
 import CompanyLogo from '../../public/img/CompanyRelated/CompanyLogoWithTitle.png';
 import { processLoginLogout, userDetails } from '../action/auth';
@@ -45,7 +45,7 @@ const Header = () => (
         </div>
         <div className = "DropDown">
             <h4>Welcome, <span id = "name"></span></h4>
-            <button className = "DropDown__btn">View Profile</button>
+            <button className = "DropDown__btn"><Link className = "Link" to = "/profile">View Profile</Link></button>
             <button onClick = {processLoginLogout} className ="DropDown__btn" id = "loginout-btn">Logout</button>
         </div>
     </div>

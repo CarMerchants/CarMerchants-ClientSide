@@ -3,7 +3,11 @@ import ContactUsPage from "../components/ContactUsPage";
 import { firebase,googleAuthProvider } from "../firebase/firebase"
 import user_img from '../../public/img/CompanyRelated/GuestLogin.png';
 
-export const SetBtnInfo = () => {
+export const details = {
+    profile_pic : user_img,
+}
+
+export  const SetBtnInfo = () => {
     firebase.auth().onAuthStateChanged((user) => {
         if(user){
             document.getElementById("log__btn").style.display = "none";
@@ -15,6 +19,16 @@ export const SetBtnInfo = () => {
             document.getElementById("loginout-btn").innerHTML = "Log In";
             document.getElementById("user-img").src = user_img;
             document.getElementById("name").innerHTML = "guest!";
+        }
+    });
+};
+
+export const  profilePage = () => {
+    firebase.auth().onAuthStateChanged((user) => {
+        if(user){
+            document.getElementById("user-img").src = firebase.auth().currentUser.photoURL;
+        }else{
+            document.getElementById("user-img").src = user_img;
         }
     })
 };
