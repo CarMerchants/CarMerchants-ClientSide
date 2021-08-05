@@ -15,10 +15,13 @@ body {
     margin: 0;
     width: 100%;
     overflow-x: hidden;
-
     display: flex;
     flex-direction: column;
     height: 100vh;
+}
+
+.CommonClass{
+    flex-grow: 1;
 }
 
 .isActive ::after{

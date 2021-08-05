@@ -13,18 +13,20 @@ import FeedBack from '../components/sections/FeedBack';
 import ProfilePage from '../components/ProfilePage';
 
 export const AppRouter = () => (
-    <div>
-            <Header />
-            <Switch>
-                <Route path = "/" component={HomePage} exact = {true}/>
-                <Route path = "/products" component={ProductPage} />
-                <Route path = "/contact_us"  component={ContactUsPage} />
-                <Route path = "/team" component={TeamPage} />
-                <Route path = "/blog" component = {BlogPage}/>
-                <Route path = "/sitemap" component = {SiteMapPage}/>
-                <Route path = "/profile" component = {ProfilePage}/>
-                <Route component = {NotFound}/>
-            </Switch>
+    <div>   
+            <div className = "CommonClass">
+                <Header/>
+                <Switch>
+                    <Route path = "/" component={HomePage} exact = {true}/>
+                    <Route path = "/products" component={ProductPage} />
+                    <Route path = "/contact_us"  component={ContactUsPage} />
+                    <Route path = "/team" component={TeamPage} />
+                    <Route path = "/blog" component = {BlogPage}/>
+                    <Route path = "/sitemap" component = {SiteMapPage}/>
+                    <Route path = "/profile" component = {ProfilePage}/>
+                    <Route component = {NotFound}/>
+                </Switch>
+            </div>
             <Footer/>
     </div>
 );
