@@ -1,10 +1,10 @@
 .MainContactUs{
+    flex-grow: 1;
     display: flex;
     margin: 2rem;
     align-items: center;
     justify-content: center;
     color: $greyish-black;
-    flex-grow: 1;
 }
 
 .PhoneNumbers{
