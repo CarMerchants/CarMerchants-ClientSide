@@ -7,6 +7,8 @@ import { SetBtnInfo} from '../action/auth';
 import {firebase} from '../firebase/firebase';
 import user_img from '../../public/img/CompanyRelated/GuestLogin.png';
 import drop_down from '../../public/img/CompanyRelated/drop_down.png';
+import  UpdateProf  from './sections/OptionModal';
+
 
 const Header = () => (
     <div class = "Header">
@@ -29,6 +31,9 @@ const Header = () => (
                 <NavLink  id = "external-link-btn" className = "Option__text" activeClassName="isActive" to = "/products" >Products</NavLink>
             </div>
             <div className = "Option">
+                <NavLink  id = "external-link-btn" className = "Option__text" activeClassName="isActive" to = "/products" >Reviews</NavLink>
+            </div>
+            <div className = "Option">
                 <NavLink id = "external-link-btn" className = "Option__text" activeClassName="isActive" to = "/team" >Team</NavLink>
             </div>
             <div className = "login__btn Option">
@@ -40,7 +45,8 @@ const Header = () => (
         </div>
         <div className = "DropDown">
             <h4>Welcome, <span id = "name"></span></h4>
-            <button onClick = {processLoginLogout} id = "loginout-btn">Logout</button>
+            <button className = "DropDown__btn">View Profile</button>
+            <button onClick = {processLoginLogout} className ="DropDown__btn" id = "loginout-btn">Logout</button>
         </div>
     </div>
 );

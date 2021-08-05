@@ -29,13 +29,6 @@ if(CloseNav){
     })
 }
 
-firebase.auth().onAuthStateChanged((user) => {
-    if(user){
-        console.log("The user is logged in");
-    }else{
-        console.log("The user is logged out!!");
-    }
-})
 
 
 //Functions...
