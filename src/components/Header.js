@@ -10,6 +10,7 @@ import drop_down from '../../public/img/CompanyRelated/drop_down.png';
 import  UpdateProf  from './sections/OptionModal';
 import cart from '../../public/img/CompanyRelated/cart.png';
 import logout from '../../public/img/CompanyRelated/logout.png';
+import ProfilePageForm from './ProfilePageForm';
 
 const Header = () => (
     <div class = "Header">
@@ -49,7 +50,7 @@ const Header = () => (
                 </div>
             </button>
             <button className = "DropDown__btn">Orders</button>
-            <button className = "DropDown__btn"><Link className = "Link" to = "/profile">View Profile</Link></button>
+            <ProfilePageForm />
             <button onClick = {processLoginLogout} className ="DropDown__btn" id = "loginout-btn">
                 <div className = "DropDown__imgbtn">
                     <img id = "loginout-btn-img" src = {logout}/><span id = "loginout-btn-text">Log Out</span>

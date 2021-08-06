@@ -36,6 +36,8 @@
     transition: .8s;
 }
 
+
+
 .NavBar {
     display: flex;
     width: 50%;
@@ -128,6 +130,29 @@
     color: white;
     box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.521);
     transition: 0.6s;
+}
+
+.DropDown__btn_div{
+    width: 100%;
+    font-size: large;
+    font-weight: 200;
+    letter-spacing: .1rem;
+    margin-bottom: 3%;
+    padding: 3%;
+    cursor: pointer;
+    background: #02203c;
+    border-radius: .5rem;
+    outline: none;
+    border: none;
+    color: white;
+    box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.521);
+    transition: 0.6s;
+}
+
+.ProfilePageForm{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
 }
 
 .DropDown__btn:hover{

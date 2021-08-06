@@ -1,7 +1,38 @@
-.ProfilePage {
-    flex-grow: 1;
+.Profile__Details{
+    margin-top: 5rem;
     display: flex;
-    margin-top: 0%;
-    padding: 0%;
-    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Profile__Details img {
+    width: 20rem;
+    height: 20rem;
+    border: 1px solid black;
+    border-radius: 100rem;
+    margin-right: 5rem;
+}
+
+.Profile__Details .Main_Details{
+    border: 1px solid black;
+    width: 50rem;
+    height: 25rem;
+    padding: 0rem 2rem;
+}
+
+@media (max-width : $desktop-breakpoint){
+    .Profile__Details{
+        flex-direction: column;
+    }
+    .Profile__Details .Main_Details{
+        width: 25rem;
+        height: 15rem;
+    }
+    .Profile__Details img {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        width: 10rem;
+        height: 10rem;
+        border-radius:80rem;
+    }
 }

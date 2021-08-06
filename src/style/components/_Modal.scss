@@ -1,0 +1,38 @@
+.ReactModalPortal .ReactModal__Overlay{  //To change the box
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.modal {
+    display: flex;
+    background: white;
+    width: 100rem;
+    height: 50rem;
+    flex-direction: column;
+    padding: 2rem;
+    border: 1px solid black;
+}
+
+.modal button{
+    width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+    cursor: pointer;
+}
+
+
+@media (max-width : $desktop-breakpoint){
+    .modal{
+        justify-content: center;
+        align-items: center;
+        width: 30rem;
+        padding: 1rem;
+    }
+    .modal button{
+        margin-top: 5rem;
+    }
+      
+}
