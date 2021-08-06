@@ -8,7 +8,7 @@
 .HomePage h1::after{
     content: "";
     display: block;
-    width: 2%;
+    width: 3.5rem;
     height: .4rem;
     background-color: $light-orange;
     border-radius: 2rem;
@@ -121,11 +121,13 @@
         margin: .5rem .3rem;
     }
 
-    .HomePage h1::after {
+    .HomePage h1::after{
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
     }
+
+
+
 
     .SideImg{
         margin-top: 0rem;
@@ -182,6 +184,10 @@
         width: 96%;
         padding: 0rem;
     }
+    .HomePage h1::after{
+        margin-left: auto;
+        margin-right: auto;
+    }
     .WithText__text{
         width: 55%;
         padding: 0 .5rem;
@@ -197,9 +203,5 @@
     .HomePage h1 {
         font-size: 2rem;
     }
-    .HomePage h1::after {
-        margin-left: auto;
-        margin-right: auto;
-        width: 10%;
-    }
+
 }

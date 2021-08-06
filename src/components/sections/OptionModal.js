@@ -8,7 +8,7 @@ const UpdateProf = (props) => (
         onRequestClose = {props.handleCloseOpt}
         className = "modal"
     >
-        <h2>My Profile</h2>
+        <h2 className = "modal__title">My Profile</h2>
         <div className = "Profile__Details">
             <img src = {props.profile_pic}/>
             <div className = "Main_Details">
@@ -16,7 +16,7 @@ const UpdateProf = (props) => (
                 <h4>Email : {props.email}</h4>
             </div>
         </div>
-        <button onClick = {props.handleCloseOpt}>Okay</button>
+        <button className = "DropDown__btn" onClick = {props.handleCloseOpt}>Okay</button>
     </Modal>
 )
 
