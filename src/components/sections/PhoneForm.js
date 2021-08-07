@@ -22,6 +22,7 @@ export default class PhoneForm extends React.Component{
         if(val.length>10){
             return;
         }
+        if(!val || val.match(/^\d{1,}?$/))
         this.setState(() => ({
             phone : val,
         }));
