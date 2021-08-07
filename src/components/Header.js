@@ -50,7 +50,8 @@ const Header = () => (
                 </div>
             </button>
             <button className = "DropDown__btn">Orders</button>
-            <ProfilePageForm />
+            <ProfilePageForm button_name = "Profile" ChgNum = {false}/>
+            <ProfilePageForm button_name = "Update Profile" ChgNum = {true}/>
             <button onClick = {processLoginLogout} className ="DropDown__btn" id = "loginout-btn">
                 <div className = "DropDown__imgbtn">
                     <img id = "loginout-btn-img" src = {logout}/><span id = "loginout-btn-text">Log Out</span>

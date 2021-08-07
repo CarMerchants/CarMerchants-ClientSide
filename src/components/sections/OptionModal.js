@@ -15,7 +15,9 @@ const UpdateProf = (props) => (
             <div className = "Main_Details">
                 <h4>Name : {props.name}</h4>
                 <h4>Email : {props.email}</h4>
-                <PhoneForm/>
+                {props.required ? <PhoneForm/> : 
+                    <h4>Phone : {props.phone}</h4>
+                }
             </div>
         </div>
         <button className = "DropDown__btn" onClick = {props.handleCloseOpt}>Okay</button>

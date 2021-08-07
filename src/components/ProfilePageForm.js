@@ -8,10 +8,12 @@ export default class ProfilePageForm extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            isOpen : true,
+            isOpen : false,
             profile_pic : user_img,
             name : "Guest",
             email : "",
+            ChgNum : this.props.ChgNum,
+            phone : ""
         };
 
         //Bindings..
@@ -32,11 +34,13 @@ export default class ProfilePageForm extends React.Component{
                     name : user.displayName,
                     email : user.email,
                 }))
+                console.log(user.phoneNumber);
             }else{
                 this.setState(() => ({
                     profile_pic : user_img,
                     name : "Guest",
-                    email : ""
+                    email : "",
+                    phone : ""
                 }))
             }
         })
@@ -54,13 +58,15 @@ export default class ProfilePageForm extends React.Component{
     render(){
         return (
             <form onSubmit = {this.onSubmit} className ="ProfilePageForm">
-                <button className = "DropDown__btn_div">Profile</button>
+                <button className = "DropDown__btn_div">{this.props.button_name}</button>
                 <UpdateProf 
                     name = {this.state.name} 
                     profile_pic = {this.state.profile_pic} 
                     email = {this.state.email}
                     handleCloseOpt = {this.handleCloseOpt} 
                     isOpen ={this.state.isOpen}
+                    required = {this.state.ChgNum}
+                    phone = {this.state.phone}
                 />
             </form>
         )
