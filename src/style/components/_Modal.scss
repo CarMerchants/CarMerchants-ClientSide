@@ -38,11 +38,73 @@
     margin-left: auto;
     margin-right: auto;
     padding: 1rem;
-
-    margin-top: 5rem;
+    margin-top: 2rem;
     cursor: pointer;
     outline: none;
 }
+
+.PhoneForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10rem;
+
+}
+
+#phoneInput{
+    margin-top: -5rem;
+}
+
+.PhoneForm input{
+    width: 15rem;
+    height: 4rem;
+    padding: 0 .5rem;
+    outline: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2rem;
+    border: 1px solid rgba(128, 128, 128, 0.609);
+    border-radius: .5rem;
+    box-shadow: 0 2px 5px rgba(50,50,93,10%);
+    letter-spacing: .2rem;
+}
+
+#phoneInput input{
+    border-radius: 0rem;
+}
+
+#phoneInput-1{
+    display: flex;
+    flex-direction: column;
+}
+
+#phoneInput-1 button{
+    margin-left: 0rem;
+}
+
+.otp-container{
+    font-weight: bold;
+}
+
+.PhoneForm input:focus{
+    border: 2px solid $greyish-black;
+}
+
+.PhoneForm button{
+    width: 10rem;
+    height: 4rem;
+    border:  none;
+    padding: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.5rem;
+    text-align: start;
+    margin-left: 1rem;
+    letter-spacing: .1rem;
+    font-weight: lighter;
+    border: 1px solid rgba(128, 128, 128, 0.609);
+    text-align: center;
+}
+
+
 
 
 @media (max-width : $desktop-breakpoint){
@@ -54,7 +116,20 @@
         padding: .5rem;
     }
     .modal button{
+        margin-top: 2rem;
+    }
+    .PhoneForm{
         margin-top: 5rem;
+    }
+    .PhoneForm input {
+        height: 2.5rem;
+        width: 10rem;
+        font-size: 1.5rem;
+    }
+
+    .PhoneForm button{
+        width: 8rem;
+        height: 3rem;
     }
       
 }

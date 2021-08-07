@@ -2,6 +2,7 @@ import React from 'react';
 import user_img from '../../public/img/CompanyRelated/GuestLogin.png';
 import UpdateProf from './sections/OptionModal';
 import {firebase} from '../firebase/firebase';
+import PhoneForm from './sections/PhoneForm';
 
 export default class ProfilePageForm extends React.Component{
     constructor(props){
