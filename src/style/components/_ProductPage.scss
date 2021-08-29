@@ -1,11 +1,12 @@
 .ProductPage{
     display: flex;
     flex-direction: column;
-    width: 85%;
+    width: 90%;
     height: 100rem;
     justify-content: center;
     align-items: center;
-    margin: 1rem auto;
+    margin: 2rem auto;
+    border: 1px solid black;
 }
 
 .Car-Options{
@@ -13,7 +14,7 @@
     flex-direction: row;
     justify-content: space-around;
     overflow: auto;
-    width: 90%;
+    width: 95%;
     height: 90%;
     flex-wrap: wrap;
     border-bottom-left-radius: 1rem;
@@ -26,7 +27,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 30rem;
+    width: 35rem;
     height: 40rem;
     margin: 1.5rem;
     border-radius: 1rem;
@@ -55,11 +56,10 @@
 }
 
 .Car-Name{
-    border:  2px solid $light-blue;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 85%;
     height : 10%;
     border-radius: 1rem;
 }
