@@ -21,9 +21,10 @@ export default class ProductPage extends React.Component{
         this.onCloseHandler = this.onCloseHandler.bind(this);
     }
 
-    onClickHandler(){
+    onClickHandler(e){
         this.setState(() => ({
-            isOpen : true
+            isOpen : true,
+            contentLabel : e.target.value,
         }));        
     };
 
@@ -37,7 +38,7 @@ export default class ProductPage extends React.Component{
         return (
             <div className = "ProductPage">
             <div className = "Car-Options">
-                <div onClick = {this.onClickHandler} className = "Option">
+                <div onClick = {this.onClickHandler} value = "Yash" className = "Option">
                     <div className = "Car-Img">
                         <img src = {car}/>
                     </div>
@@ -87,7 +88,7 @@ export default class ProductPage extends React.Component{
                         </div>
                     </div>
                 </div>
-                <div className = "Option"></div>
+                <div value = "Bharat" onClick = {this.onClickHandler} className = "Option"></div>
                 <div className = "Option"></div>
                 <div className = "Option"></div>
                 <div className = "Option"></div>
@@ -97,6 +98,7 @@ export default class ProductPage extends React.Component{
             <CarModal 
                 isOpen = {this.state.isOpen}
                 onCloseHandler = {this.onCloseHandler}
+                contentLabel = {this.state.contentLabel}
             />
         </div>
         )
