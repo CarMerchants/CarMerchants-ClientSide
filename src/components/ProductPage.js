@@ -7,19 +7,37 @@ import Owner from '../../public/img/CompanyRelated/Owner.svg';
 import purchase from '../../public/img/CompanyRelated/purchase_year.svg';
 import insurance from '../../public/img/CompanyRelated/insurance.svg';
 import transmission_type from '../../public/img/CompanyRelated/transmission_type.svg';
+import CarModal from './sections/CarModal';
 
 export default class ProductPage extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            isOpen = false,
+            isOpen : false,
+            contentLabel : "temp",
         }
+
+        this.onClickHandler = this.onClickHandler.bind(this);
+        this.onCloseHandler = this.onCloseHandler.bind(this);
     }
+
+    onClickHandler(){
+        this.setState(() => ({
+            isOpen : true
+        }));        
+    };
+
+    onCloseHandler(){
+        this.setState(() => ({
+            isOpen : false,
+        }));
+    };
+
     render(){
         return (
             <div className = "ProductPage">
             <div className = "Car-Options">
-                <div className = "Option">
+                <div onClick = {this.onClickHandler} className = "Option">
                     <div className = "Car-Img">
                         <img src = {car}/>
                     </div>
@@ -76,6 +94,10 @@ export default class ProductPage extends React.Component{
                 <div className = "Option"></div>
                 <div className = "Option"></div>         
             </div>
+            <CarModal 
+                isOpen = {this.state.isOpen}
+                onCloseHandler = {this.onCloseHandler}
+            />
         </div>
         )
     }
